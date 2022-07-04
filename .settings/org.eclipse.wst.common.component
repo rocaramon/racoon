@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+            
+    
+    <wb-module deploy-name="Racoon">
+                        
+        
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+                
+        <dependent-module archiveName="SocketClient.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/SocketClient/SocketClient">
+                        
+            <dependency-type>uses</dependency-type>
+                    
+        </dependent-module>
+                
+        <dependent-module archiveName="TokensProsa.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/TokensProsa/TokensProsa">
+                        
+            <dependency-type>uses</dependency-type>
+                    
+        </dependent-module>
+        <dependent-module archiveName="IsoProsa.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/IsoProsa/IsoProsa">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+                        
+        
+        <property name="context-root" value="Racoon"/>
+                        
+        
+        <property name="java-output-path" value="/Racoon/build/classes"/>
+                    
+    
+    </wb-module>
+        
+
+</project-modules>
